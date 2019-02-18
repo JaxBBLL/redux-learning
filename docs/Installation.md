@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [安装](#%E5%AE%89%E8%A3%85)
+  - [补充包](#%E8%A1%A5%E5%85%85%E5%8C%85)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 安装
 
 要安装稳定版本：

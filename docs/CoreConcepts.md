@@ -1,3 +1,10 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [核心概念](#%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 核心概念
 
 想象一下，您的应用程序的状态被描述为一个普通对象。例如，todo应用程序的状态可能如下所示：

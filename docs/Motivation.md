@@ -1,3 +1,10 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [动因](#%E5%8A%A8%E5%9B%A0)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 动因
 
 随着JavaScript单页面应用程序的要求变得越来越复杂，我们的代码必须管理比以往更多的状态。此状态可以包括服务器响应和缓存数据，以及尚未持久保存到服务器的本地创建的数据。UI状态的复杂性也在增加，因为我们需要管理活动路径，选定选项卡，微调器，分页控件等。

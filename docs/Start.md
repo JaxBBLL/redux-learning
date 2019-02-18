@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+- [Redux入门](#redux%E5%85%A5%E9%97%A8)
+  - [安装](#%E5%AE%89%E8%A3%85)
+  - [Redux入门套件](#redux%E5%85%A5%E9%97%A8%E5%A5%97%E4%BB%B6)
+  - [基本例子](#%E5%9F%BA%E6%9C%AC%E4%BE%8B%E5%AD%90)
+  - [例子](#%E4%BE%8B%E5%AD%90)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Redux入门
 
 Redux是JavaScript应用程序的可预测状态容器。
