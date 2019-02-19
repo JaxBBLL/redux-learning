@@ -10,14 +10,19 @@
   "author": "JaxBBLL",
   "license": "ISC",
   "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",
-    "redux-devtools": "^3.5.0"
+    "redux-devtools": "^3.5.0",
+    "reselect": "^4.0.0",
+    "todomvc-app-css": "^2.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
     "@babel/plugin-transform-react-jsx": "^7.2.0",
     "@babel/preset-env": "^7.2.3",
     "autoprefixer": "^9.4.5",
@@ -44,7 +49,8 @@
       "@babel/preset-env"
     ],
     "plugins": [
-      "@babel/plugin-transform-react-jsx"
+      "@babel/plugin-transform-react-jsx",
+      "@babel/plugin-proposal-class-properties"
     ]
   }
 }
