@@ -1,9 +1,11 @@
 import { createStore } from './redux.js';
 import * as types from './types.js';
+import initState from './state.js'
 
 // state是一个状态树，可以是任意的结构
 // action是一个纯对象 {type: 'INCREASE'}
-let reducer = (state = { number: 0 }, action) => {
+let reducer = (state, action) => {
+  state = state || initState
   if (action === undefined) {
     return state;
   }
@@ -21,7 +23,6 @@ let reducer = (state = { number: 0 }, action) => {
   }
 
 }
-
 
 let store = createStore(reducer);
 
