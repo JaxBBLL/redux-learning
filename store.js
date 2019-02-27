@@ -11,13 +11,13 @@ let reducer = (state, action) => {
   }
   switch (action.type) {
     case types.INCREASE:
-      return {
+      return Object.assign({}, state, {
         number: state.number + 1
-      }
+      })
     case types.DECREASE:
-      return {
+      return Object.assign({}, state, {
         number: state.number - 1
-      }
+      })
     default:
       return state;
   }
