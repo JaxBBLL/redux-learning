@@ -1,30 +1,34 @@
 import store from './store.js';
 import * as types from './types.js';
 
+const qs = (id) => {
+  return document.querySelector(`#${id}`)
+}
+
 export default class App {
   constructor(id) {
-    this.$el = $(`#${id}`)
+    this.$el = qs(id);
     this.$view = null;
   }
 
   initEvent() {
-    $('#increaseBtn').click(() => {
+    qs('increaseBtn').addEventListener('click', (ev) => {
       store.dispatch({ type: types.INCREASE });
-    })
+    }, false)
 
-    $('#decreaseBtn').click(() => {
+    qs('decreaseBtn').addEventListener('click', (ev) => {
       store.dispatch({ type: types.DECREASE });
-    })
+    }, false)
   }
 
   initTemplate() {
-    this.$el.append(`
+    this.$el.innerHTML = `
     <h3>redux demo</h3>
-    <p id="counter"></p>
+    <p id="view"></p>
     <button id="increaseBtn">+</button>
     <button id="decreaseBtn">-</button>
-    `)
-    this.$view = this.$el.find('#counter');
+    `
+    this.$view = qs('view')
   }
 
   init() {
