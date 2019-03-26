@@ -10,6 +10,9 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
-### 本示例简单手动实现一个redux
+### my-redux目录简单手动实现一个redux
 
 > 请在服务器容器中运行
+
+
+### src目录展示react的redux应用示例
