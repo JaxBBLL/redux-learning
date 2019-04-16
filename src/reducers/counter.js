@@ -18,11 +18,11 @@ export default function todos(state = INITIAL_STATE, action) {
         num: state.num - 1
       };
     case LIST:
-      console.log(action.payload)
+      console.log(action.payload);
       return {
         ...state,
         list: action.payload
-      }
+      };
     default:
       return state;
   }

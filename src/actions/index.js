@@ -1,6 +1,6 @@
 import { ADD, MINUS, LIST } from "../constants";
-import { createAction } from '@utils/redux'
-import { API_POETRY } from '../constants/api'
+import { createAction } from "@utils/redux";
+import { API_POETRY } from "../constants/api";
 
 export const add = () => {
   return {
@@ -23,11 +23,12 @@ export function asyncAdd() {
   };
 }
 
-export const fetchList = name => createAction({
-  url: API_POETRY,
-  method: 'GET',
-  type: LIST,
-  payload: {
-    name
-  }
-})
+export const fetchList = name =>
+  createAction({
+    url: API_POETRY,
+    method: "GET",
+    type: LIST,
+    payload: {
+      name
+    }
+  });
