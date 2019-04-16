@@ -2,30 +2,13 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import "./normalize.css";
 import "./App.less";
-import { add, minus, asyncAdd } from "./actions";
-
-const mapStateToProps = ({ counter }) => ({ counter });
-const mapDispatchToProps = dispatch => ({
-  add() {
-    dispatch(add());
-  },
-  dec() {
-    dispatch(minus());
-  },
-  asyncAdd() {
-    dispatch(asyncAdd());
-  }
-});
+import * as mapDispatchToProps from "./actions";
 
 @connect(
-  mapStateToProps,
+  ({ counter }) => ({ counter }),
   mapDispatchToProps
 )
 export default class App extends Component {
-  state = {
-    list: [1, 2, 3]
-  };
-
   componentWillReceiveProps(nextProps) {
     console.log(this.props, nextProps);
   }
@@ -36,18 +19,25 @@ export default class App extends Component {
         <button className="add_btn" onClick={this.props.add}>
           +
         </button>
-        <button className="dec_btn" onClick={this.props.dec}>
+        <button className="dec_btn" onClick={this.props.minus}>
           -
         </button>
         <button className="dec_btn" onClick={this.props.asyncAdd}>
           async
         </button>
+        <button className="dec_btn" onClick={() => { this.props.fetchList('白居易') }}>
+          fetchList
+        </button>
         <p>
           <span>{this.props.counter.num}</span>
         </p>
-        <ul>
-          {this.state.list.map((item, index) => (
-            <li key={index}>{item}</li>
+        <ul className="list-wrap">
+          {this.props.counter.list.map((item, index) => (
+            <li key={index} className="tac">
+              <h3>{item.title}</h3>
+              <p>作者：{item.authors}</p>
+              <div dangerouslySetInnerHTML={{__html:item.content.split('|').join('<br>')}}></div>
+            </li>
           ))}
         </ul>
       </div>

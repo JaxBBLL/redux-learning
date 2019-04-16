@@ -1,7 +1,8 @@
-import { ADD, MINUS } from "../constants";
+import { ADD, MINUS, LIST } from "../constants";
 
 const INITIAL_STATE = {
-  num: 0
+  num: 0,
+  list: []
 };
 
 export default function todos(state = INITIAL_STATE, action) {
@@ -16,6 +17,12 @@ export default function todos(state = INITIAL_STATE, action) {
         ...state,
         num: state.num - 1
       };
+    case LIST:
+      console.log(action.payload)
+      return {
+        ...state,
+        list: action.payload
+      }
     default:
       return state;
   }

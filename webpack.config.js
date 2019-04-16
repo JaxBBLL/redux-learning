@@ -68,7 +68,7 @@ const webpackConfig = {
   resolve: {
     alias: {
       '@': resolve('src'),
-      'images': resolve('src/images'),
+      '@utils': resolve('src/utils'),
     }
   },
   module: {
@@ -162,11 +162,11 @@ const webpackConfig = {
   devtool: isDev ? 'module-source-map' : '#source-map',
   devServer: {
     proxy: {
-      '/api': {
+      '/proxyApi': {
         target: 'http://admin.test.kucdn.cn/',
         changeOrigin: true,
         pathRewrite: {
-          '^/api': '/api'
+          '^/proxyApi': '/'
         }
       }
     },
