@@ -1,11 +1,33 @@
-ul,li {
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+  &:after {
+    content: '';
+    display: table;
+  }
+}
+
+ul,
+li {
   list-style: none;
 }
+
 .list-wrap {
-  width: 60%;
   margin: 0 auto;
 }
 
 .tac {
   text-align: center;
+}
+
+.redux-wrap {
+  border: 1px solid #ddd;
+  width: 50%;
 }
