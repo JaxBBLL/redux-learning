@@ -10,10 +10,9 @@
   "author": "JaxBBLL",
   "license": "ISC",
   "dependencies": {
-    "antd": "^3.12.3",
     "axios": "^0.18.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-redux": "^6.0.1",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
